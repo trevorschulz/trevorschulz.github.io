@@ -26,6 +26,6 @@ body {
 }
 
 h1 {
-font-size: 7em;
+font-size: 20em;
 font-color: red;
 }
