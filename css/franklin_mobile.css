@@ -26,5 +26,22 @@ body {
 }
 h1,h2,h3,h4{
 color:blue;
+font-family: "Sansita One";
+}
+ ul{
+     list-style-type: none;
+     display: flex
+     padding: 0;
+}
+h1{
+    font-size:2em;
+}
+#place{
+    font-size:40px;
+}
 
+main {
+ display: flex;
+ flex-flow: column nowrap;
+ align-items: center;
 }
