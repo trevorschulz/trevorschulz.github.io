@@ -21,27 +21,90 @@ the HTML5 semantic elements */
 }
 
 body {
- margin: 0; /* remove any margin from body */
- padding: 0; /* ditto for padding */
+    margin: 0; /* remove any margin from body */
+    padding: o; /* ditto for padding */
+    background-image:url("/images/plan-images/raindrops.jpg");
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;            
 }
-h1,h2,h3,h4{
-color:blue;
-font-family: "Sansita One";
+
+
+
+nav{
+    position: fixed;
+    bottom:0;
+    left: 0;
+    right; 0;
+    justify-content: space-around; 
+    text-align: center;
+    
 }
- ul{
+
+nav.navbox {
+    text-decoration: none;
+    background-color: #0e89d5;
+    width: 100%;
+}
+nav a:link {
+    text-decoration: none;
+    color: #47556F;
+    text-align: center;
+    font-size: 20px;
+}
+ul, li{
      list-style-type: none;
-     display: flex
-     padding: 0;
-}
-h1{
-    font-size:2em;
-}
-#place{
-    font-size:40px;
+     display: flex;
+     padding: 2px;
+     font-size: 1.2em;
+     width: 100%;
+    padding-left: .2cm;
 }
 
 main {
  display: flex;
  flex-flow: column nowrap;
  align-items: center;
+}
+
+h1{
+    font-size:3em; 
+    background-color: #fff;
+    margin: 0em auto;
+    border: 0 solid;
+    border-radius: 3px;
+   
+}
+
+h1,h2,h3,h4{
+    color:#0e89d5;
+    font-family: "Sansita One";
+}
+
+.cond{
+    background-color: rgba(200,200,200,.6);
+    margin: .2em auto;
+    border: 2px solid;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#place{
+    font-size:40px;
+}
+
+.box{ 
+  background-color: white;
+  width: 100%;
+  left: 0%;
+  top: 0%;
+  text-align: center;
+}
+
+footer{
+    background-color: #fff;
+    width: 100%;
+    padding-bottom: 75px;
+    text-align: center;
+   
 }
