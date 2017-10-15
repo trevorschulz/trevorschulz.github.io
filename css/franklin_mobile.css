@@ -105,7 +105,9 @@ h1,h2,h3,h4{
     border: 2px solid;
     border-radius: 8px;
     text-align: center;
-#place{
+}
+
+    #place{
     font-size:40px;
 }
 
