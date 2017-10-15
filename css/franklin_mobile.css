@@ -22,7 +22,7 @@ the HTML5 semantic elements */
 
 body {
     margin: 0; /* remove any margin from body */
-    padding: o; /* ditto for padding */
+    padding: 0; /* ditto for padding */
     background-image:url("/images/plan-images/rainy.gif");
     background-attachment:fixed;
     background-repeat: no-repeat;
@@ -34,26 +34,22 @@ body {
 nav{
     position: fixed;
     bottom:0;
-    left: 0;
-    right; 0;
     justify-content: space-around; 
     text-align: center;
     background-color: #0e89d5;
-    width: 100%;
-    
+    width: 100%; 
 }
 
 nav.navbox {
     text-decoration: none;
-    
 }
 nav a:link {
     text-decoration: none;
     color: #47556F;
     text-align: center;
     font-size: 12px;
-    
 }
+
 ul, li{
      list-style-type: none;
      display: flex;
@@ -61,7 +57,6 @@ ul, li{
      font-size: 1.2em;
      width: 100%;
     padding-left: .2cm;
-    
 }
 
 main {
@@ -76,7 +71,6 @@ h1{
     margin: 0em auto;
     border: 0 solid;
     border-radius: 3px;
-   
 }
 
 h1,h2,h3,h4{
@@ -125,8 +119,6 @@ footer{
     padding-bottom: 130px;
     text-align: center;
     bottom:0;
-    left: 0;
-    right; 0;
     height: 100px;
    
 }
