@@ -84,6 +84,13 @@ h1,h2,h3,h4{
     font-family: "Sansita One";
 }
 
+.temp{
+    background-color: rgba(200,200,200,.6);
+    margin: .2em auto;
+    border: 2px solid;
+    border-radius: 8px;
+    text-align: center;
+}
 .cond{
     background-color: rgba(200,200,200,.6);
     margin: .2em auto;
@@ -92,6 +99,12 @@ h1,h2,h3,h4{
     text-align: center;
 }
 
+.hourly{
+    background-color: rgba(200,200,200,.6);
+    margin: .2em auto;
+    border: 2px solid;
+    border-radius: 8px;
+    text-align: center;
 #place{
     font-size:40px;
 }
