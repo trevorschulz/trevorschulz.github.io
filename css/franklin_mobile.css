@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Sansita');
+
 * {
- box-sizing: border-box; /* changes width property
+    box-sizing: border-box;
+    /* changes width property
     to total width instead of content width */
 }
-*:before, *:after{
- box-sizing: border-box;
+
+*:before,
+*:after {
+    box-sizing: border-box;
 }
 
 article,
@@ -15,9 +20,15 @@ section,
 main,
 figcaption,
 figure {
- display: block; /* just in case we have
-any older browsers that don't recognize
-the HTML5 semantic elements */
+    display: block;
+    /* just in case we have
+    any older browsers that don't recognize
+    the HTML5 semantic elements */
+}
+
+main {
+    display: flex;
+    flex-flow: column nowrap;
 }
 
 body {
@@ -43,18 +54,36 @@ nav{
 nav.navbox {
     text-decoration: none;
 }
+
 nav a:link {
     text-decoration: none;
     color: #47556F;
     text-align: center;
-    font-size: 12px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+nav a:visited {
+    color: #D8F;
+}
+
+nav a:active {
+    text-decoration: underline;
+    cursor: auto;
+}
+
+nav a:hover {
+    color: white;
 }
 
 ul, li{
      list-style-type: none;
      display: flex;
      padding: 2px;
-     font-size: 1.2em;
+     font-size: 1em;
      width: 100%;
     padding-left: .2cm;
 }
@@ -75,17 +104,10 @@ h1{
 
 h1,h2,h3,h4{
     color:#0e89d5;
-    font-family: "Sansita One";
+    font-family: 'Sansita', "second choice", sans-serif;
 }
 
-.temp{
-    background-color: rgba(200,200,200,.6);
-    margin: .2em auto;
-    border: 2px solid;
-    border-radius: 8px;
-    text-align: center;
-}
-.cond{
+.boxen{
     background-color: rgba(200,200,200,.6);
     margin: .2em auto;
     border: 2px solid;
@@ -93,19 +115,12 @@ h1,h2,h3,h4{
     text-align: center;
 }
 
-.hourly{
-    background-color: rgba(200,200,200,.6);
-    margin: .2em auto;
-    border: 2px solid;
-    border-radius: 8px;
-    text-align: center;
-}
 
     #place{
     font-size:40px;
 }
 
-.box{ 
+.headbox{ 
   background-color: white;
   width: 100%;
   left: 0%;
@@ -114,11 +129,29 @@ h1,h2,h3,h4{
 }
 
 footer{
+    display: flex;
     background-color: #fff;
     width: 100%;
-    padding-bottom: 0px;
     text-align: center;
     bottom:0;
+    
    
 }
+
+@media screen and (max-width: 500px) {
+
+    .mobile {
+        display: none;
+    }
+    footer{
+        align-items: baseline;
+    }
+}
+@media screen and (min-width: 500px) {
+     
+footer{
+        padding-bottom: 75px;
+    }
+
+    }
 
