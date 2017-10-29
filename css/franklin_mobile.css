@@ -90,7 +90,7 @@ ul, li{
 
 main {
  display: flex;
- flex-flow: column nowrap;
+ flex-flow: column wrap;
  align-items: center;
 }
 
