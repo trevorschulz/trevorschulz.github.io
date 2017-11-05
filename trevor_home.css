@@ -1,0 +1,45 @@
+nav{
+    position: fixed;
+    bottom:0;
+    justify-content: space-around; 
+    text-align:center;
+    background-color: #0e89d5;
+    width: 100%; 
+}
+
+nav.navbox {
+    text-decoration: none;
+}
+
+nav a:link {
+    text-decoration: none;
+    color: #47556F;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+nav a:visited {
+    color: #D8F;
+}
+
+nav a:active {
+    text-decoration: underline;
+    cursor: auto;
+}
+
+nav a:hover {
+    color: white;
+}
+
+ul, li{
+     list-style-type: none;
+     display: flex;
+     padding: 2px;
+     font-size: 1em;
+     width: 100%;
+    padding-left: .2cm;
+}
