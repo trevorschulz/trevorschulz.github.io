@@ -136,7 +136,7 @@ footer{
     padding-bottom:4em;   
 }
 
-.mobile{
+#hourly{
     display: none;
 }
 
@@ -179,6 +179,7 @@ footer{
         width: 15em;
     }
     #hourly{
+        display: inline;
         overflow-x: hidden;
         overflow-y: scroll;
     }
@@ -189,8 +190,6 @@ footer{
         align-items: flex-end
         
     }
-.mobile{
-    display:inline;
-} 
+
 }
 
