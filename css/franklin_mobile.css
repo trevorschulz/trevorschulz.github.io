@@ -113,6 +113,7 @@ h1,h2,h3,h4{
     border: 2px solid;
     border-radius: 8px;
     text-align: center;
+    margin: 10px 10px;
 }
 
 
@@ -132,10 +133,11 @@ footer{
     display: flex;
     background-color: #fff;
     width: 100%;
-    text-align: center;
-    padding-bottom:4em;
-    
-   
+    padding-bottom:4em;   
+}
+
+.mobile{
+    display: none;
 }
 
 /********************************
@@ -155,6 +157,7 @@ footer{
     h1 {
 		font-size: 2em;
 		line-height: 1.125;
+        text-align: left;
     }
         
 .page-nav {
@@ -166,8 +169,28 @@ footer{
 	.main {
 		line-height: 1.375;
 	}
+    .data{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .boxen{
+        height: 13em;
+        width: 15em;
+    }
+    #hourly{
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+    }
     footer{
         margin-bottom: .5em;
+        display: flex;
+        align-items: flex-end
+        
     }
+.mobile{
+    display:inline;
+} 
 }
 
