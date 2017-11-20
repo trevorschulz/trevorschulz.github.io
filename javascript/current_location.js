@@ -29,6 +29,10 @@ $(function () {
   var cityName = data['location']['city'];
   var state = data['location']['state'];
   var temp_f = data['current_observation']['temp_f'];
+  var wind_dir = data["current_observation"]["wind_dir"];
+  var wind_mph = data["current_observation"]["wind_mph"];
+  var precip = data["current_observation"]["precip_today_string"];
+  var observation = data["current_observation"]["weather"];
   console.log("Current temperature in " + location + " is: " + temp_f);
 
 
@@ -38,6 +42,15 @@ let place = document.getElementById("place");
       
 let weather = document.getElementById("current_temp");
         weather.innerHTML = temp_f + "°F";
+    
+let gusts = document.getElementById("wind");
+       gusts.innerHTML = "<b>" + "Wind: " + "</b>" + wind_dir + " @ " + wind_mph + " MPH";
+      
+let rain = document.getElementById("precip");
+       rain.innerHTML = "<b>" + "Precipitation: " + "</b>" + precip;
+      
+let forecast = document.getElementById("forecast");
+       forecast.innerHTML = observation + "</br>" + "<img src='http://icons.wxug.com/i/c/k/nt_mostlycloudy.gif' alt='forecast_pic' style='width:50px;height:50px;'>";
       
         
       $("#cover").fadeOut(250);
