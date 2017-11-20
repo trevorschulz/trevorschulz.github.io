@@ -33,6 +33,7 @@ $(function () {
   var wind_mph = data["current_observation"]["wind_mph"];
   var precip = data["current_observation"]["precip_today_string"];
   var observation = data["current_observation"]["weather"];
+  var icon = data["currnet_observation"]["icon_url"]
   console.log("Current temperature in " + location + " is: " + temp_f);
 
 
@@ -53,7 +54,7 @@ let rain = document.getElementById("precip");
         rain.innerHTML = "<b>" + "Precipitation: " + "</b>" + precip;
       
 let forecast = document.getElementById("forecast");
-        forecast.innerHTML = observation + "</br>" + "<img src='http://icons.wxug.com/i/c/k/nt_mostlycloudy.gif' alt='forecast_pic' style='width:50px;height:50px;'>";
+        forecast.innerHTML = observation + "</br>" + "<img src='" + icon + "'>";
       
         
       $("#cover").fadeOut(250);
