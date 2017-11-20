@@ -40,17 +40,20 @@ let place = document.getElementById("place");
         
         place.innerHTML = cityName + ", " + state;
       
+let title = document.getElementById("title");
+        title.innerHTML = cityName + "Weather Home";
+      
 let weather = document.getElementById("current_temp");
         weather.innerHTML = temp_f + "°F";
     
 let gusts = document.getElementById("wind");
-       gusts.innerHTML = "<b>" + "Wind: " + "</b>" + wind_dir + " @ " + wind_mph + " MPH";
+        gusts.innerHTML = "<b>" + "Wind: " + "</b>" + wind_dir + " @ " + wind_mph + " MPH";
       
 let rain = document.getElementById("precip");
-       rain.innerHTML = "<b>" + "Precipitation: " + "</b>" + precip;
+        rain.innerHTML = "<b>" + "Precipitation: " + "</b>" + precip;
       
 let forecast = document.getElementById("forecast");
-       forecast.innerHTML = observation + "</br>" + "<img src='http://icons.wxug.com/i/c/k/nt_mostlycloudy.gif' alt='forecast_pic' style='width:50px;height:50px;'>";
+        forecast.innerHTML = observation + "</br>" + "<img src='http://icons.wxug.com/i/c/k/nt_mostlycloudy.gif' alt='forecast_pic' style='width:50px;height:50px;'>";
       
         
       $("#cover").fadeOut(250);

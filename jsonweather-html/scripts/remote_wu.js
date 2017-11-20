@@ -39,6 +39,9 @@ let place = document.getElementById("cityDisplay");
 let weather = document.getElementById("current_conditions");
         weather.innerHTML = temp_f + "°F";
       
+let title = document.getElementById("title");
+        title.innerHTML = cityName + "Weather Home";
+      
         
       $("#cover").fadeOut(250);
     }
