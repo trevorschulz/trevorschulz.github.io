@@ -5,11 +5,17 @@
 	<meta charset="UTF-8">
 	<title>Alcove Digital Systems</title>
 	<link rel="stylesheet" href="css/style.css">
-	<script src="js/jquery-3.0.0.min.js"></script>
+	<!---<script src="js/jquery-3.0.0.min.js"></script> --->
+    <!--The script call below replaces the above call, making the page smaller by not calling it internally -->
+    <script
+  src="//code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+    
 	<script>
 		$(function () {
 			// All jQuery code goes here
-
+            alert('Hello')
 		})
 	</script>
 </head>
