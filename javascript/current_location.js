@@ -33,7 +33,7 @@ $(function () {
   var wind_mph = data["current_observation"]["wind_mph"];
   var precip = data["current_observation"]["precip_today_string"];
   var observation = data["current_observation"]["weather"];
-  var icon = data["currnet_observation"]["icon_url"]
+  var icon = data["icon_url"]
   console.log("Current temperature in " + location + " is: " + temp_f);
 
 
