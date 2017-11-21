@@ -134,13 +134,13 @@ h1,h2,h3,h4{
   top: 0%;
   text-align: center;
 }
-footer{
+#foot{
     display: flex;
     background-color: #fff;
     width: 100%;
     padding-bottom:3em;
-    position: absolute;
-    bottom: 0;
+    
+    
     }
 
 #hourly{
@@ -193,14 +193,12 @@ footer{
         overflow-y: scroll;
     }
     }
-    footer{
-        position:absolute;
-        bottom: 0px;
-        left:0px;
-        bottom:0px;
+    #foot{
+        position: absolute;
+        bottom: 0;
         height:30px;
         width:100%;
-        margin-bottom: 50px;
+        margin-bottom: 10px;
     }
 
 }
