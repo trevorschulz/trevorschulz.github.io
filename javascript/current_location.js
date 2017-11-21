@@ -57,7 +57,8 @@ let forecast = document.getElementById("forecast");
         forecast.innerHTML = observation + "</br>" + "<img src='" + icon + "'>";
       
 // The following changes the background depending on the forecast
-var background = document.getElementById("background");
+function background_function() {
+      var background = document.getElementById("background");
         if (wind_mph >= 10){
             background.innerHTML = "<style> body{background-image:url('https://trevorschulz.github.io/images/plan-images/windy.gif')}</style>";
         }
@@ -73,6 +74,8 @@ var background = document.getElementById("background");
       else {
             background.innerHTML = "<style> body{background-image:url('https://trevorschulz.github.io/images/plan-images/sunny_cropped.gif')}</style>";
         }
+}
+background_function()
       
         
       $("#cover").fadeOut(250);
