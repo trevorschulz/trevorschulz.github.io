@@ -196,11 +196,11 @@ h1,h2,h3,h4{
     }
     }
     #foot{
-        position: absolute;
+        position: inherit;
         bottom: 0;
         height:30px;
         width:100%;
-        margin-bottom: 0px;
+        margin-bottom: 50px;
     }
 
 }
