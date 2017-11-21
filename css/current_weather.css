@@ -135,12 +135,12 @@ h1,h2,h3,h4{
   text-align: center;
 }
 #foot{
-    position: absolute;
+    position: inherit;
     display: flex;
     background-color: #fff;
     width: 100%;
     padding-bottom:3em;
-    margin-bottom: 100px;
+    margin-bottom: 70px;
     
     
     }
@@ -194,13 +194,12 @@ h1,h2,h3,h4{
         overflow-x: hidden;
         overflow-y: scroll;
     }
-    }
     #foot{
         position: inherit;
         bottom: 0;
         height:30px;
         width:100%;
-        margin-bottom: 70px;
+        margin-bottom: 0px;
     }
 
 }
