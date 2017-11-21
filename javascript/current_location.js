@@ -32,7 +32,7 @@ $(function () {
   var wind_dir = data["current_observation"]["wind_dir"];
   var wind_mph = data["current_observation"]["wind_mph"];
   var precip = data["current_observation"]["precip_today_string"];
-  var observation = "Snowy";
+  var observation = data["current_observation"]["weather"];
   var icon = data["current_observation"]["icon_url"];
   console.log("Current temperature in " + location + " is: " + temp_f);
 
@@ -57,7 +57,7 @@ let forecast = document.getElementById("forecast");
         forecast.innerHTML = observation + "</br>" + "<img src='" + icon + "'>";
       
 // The following changes the background depending on the forecast
-let background = document.getElementById("background");
+var background = document.getElementById("background");
         if (wind_mph >= 10){
             background.innerHTML = "<style> body{background-image:url('https://trevorschulz.github.io/images/plan-images/windy.gif')}</style>";
         }
