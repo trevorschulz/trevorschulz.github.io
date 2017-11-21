@@ -56,6 +56,24 @@ let rain = document.getElementById("precip");
 let forecast = document.getElementById("forecast");
         forecast.innerHTML = observation + "</br>" + "<img src='" + icon + "'>";
       
+// The following changes the background depending on the forecast
+let background = document.getElementById("background");
+        if (wind_mph >= 10){
+            background.innerHTML = "<style> body{background-image:url('/images/plan-images/windy.gif')}</style>";
+        }
+       else if (observation == "Rain"){
+            background.innerHTML = "<style> body{background-image:url('/images/plan-images/rainy.gif')}</style>";
+        }
+        else if (observation == "Snow"){
+            background.innerHTML = "<style> body{background-image:url('/images/plan-images/snowy.gif')}</style>";
+        }
+       else if (observation == "Overcast" || observation == "Mostly Cloudy" || observation == "Scattered Clouds" || observation == "Partly Cloudy"){
+            background.innerHTML = "<style> body{background-image:url('/images/plan-images/cloudy.gif')}</style>";
+        }
+      else {
+            background.innerHTML = "<style> body{background-image:url('/images/plan-images/sunny_cropped.gif')}</style>";
+        }
+      
         
       $("#cover").fadeOut(250);
     }

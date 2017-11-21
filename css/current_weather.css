@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css?family=Sansita');
+
+* {
+    box-sizing: border-box;
+    /* changes width property
+    to total width instead of content width */
+}
+
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section,
+main,
+figcaption,
+figure {
+    display: block;
+    /* just in case we have
+    any older browsers that don't recognize
+    the HTML5 semantic elements */
+}
+
+
+main {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+body {
+    margin: 0; /* remove any margin from body */
+    padding: 0px; /* ditto for padding */
+    /*background-image:url("/images/plan-images/windy.gif");*/
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;            
+}
+
+
+
+nav{
+    position: fixed;
+    bottom:0;
+    justify-content: space-around; 
+    text-align:center;
+    background-color: #0e89d5;
+    width: 100%; 
+    margin-bottom: 
+}
+
+nav.page-nav {
+    text-decoration: none;
+}
+
+nav a:link {
+    text-decoration: none;
+    color: #47556F;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+nav a:visited {
+    color: #D8F;
+}
+
+nav a:active {
+    text-decoration: underline;
+    cursor: auto;
+}
+
+nav a:hover {
+    color: white;
+}
+
+ul, li{
+     list-style-type: none;
+     display: flex;
+     padding: 2px;
+     font-size: 1em;
+     width: 100%;
+    padding-left: .2cm;
+}
+
+main {
+ display: flex;
+ flex-flow: column nowrap;
+ align-items: center;
+}
+
+h1{
+    font-size:2em; 
+    background-color: #fff;
+    margin: 0em auto;
+    border: 0 solid;
+    border-radius: 3px;
+}
+
+h1,h2,h3,h4{
+    color:#0e89d5;
+    font-family: 'Sansita', "second choice", sans-serif;
+}
+
+.boxen{
+    background-color: rgba(200,200,200,.6);
+    margin: .2em auto;
+    border: 2px solid;
+    border-radius: 8px;
+    text-align: center;
+    margin: 10px 10px;
+}
+
+
+    #place{
+    font-size:40px;
+}
+
+.headbox{ 
+  background-color: white;
+  width: 100%;
+  left: 0%;
+  top: 0%;
+  text-align: center;
+}
+footer{
+    display: flex;
+    background-color: #fff;
+    width: 100%;
+    padding-bottom:3em;
+    position:inherit;
+    bottom: 0;
+    }
+
+#hourly{
+    display: none;
+}
+
+
+/********************************
+* Large Screen Styles
+* 1200px viewport / 18px font = 66.7em
+********************************/
+
+
+@media (min-width: 41.67em) {
+	body {
+		font-size: 1.5vw;
+	}
+    .wrapper {
+        max-width: none;
+        margin: 0 auto;
+    }
+    h1 {
+		font-size: 2em;
+		line-height: 1.125;
+        text-align: left;
+    }
+        
+.page-nav {
+		position: relative;
+        bottom: 0 px;
+	}
+	.page-nav li {
+		flex: 0 1 20%;
+	}
+	.main {
+		line-height: 1.375;
+	}
+    .data{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .boxen{
+        height: 13em;
+        width: 15em;
+    }
+    #hourly{
+        display: inline;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+    }
+    footer{
+        position:absolute;
+        bottom: 0px;
+        left:0px;
+        bottom:0px;
+        height:30px;
+        width:100%;
+        margin-bottom: 50px;
+    }
+
+}
+
