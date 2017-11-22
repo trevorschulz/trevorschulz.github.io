@@ -62,7 +62,7 @@ function background_function() {
         if (wind_mph >= 10){
             background.innerHTML = "<style> body{background-image:url('/images/plan-images/windy.gif')}</style>";
         }
-       else if (observation == "Rain"){
+       else if (observation == "Rain" || observation == "Light Rain" || observation == "Mostly Rainy" || observation == "Heavy Rain"){
             background.innerHTML = "<style> body{background-image:url('/images/plan-images/rainy.gif')}</style>";
         }
         else if (observation == "Snow"){
