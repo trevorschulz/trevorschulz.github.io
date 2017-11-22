@@ -48,7 +48,12 @@ let weather = document.getElementById("current_temp");
         weather.innerHTML = temp_f + "°F";
     
 let gusts = document.getElementById("wind");
-        gusts.innerHTML = "<b>" + "Wind: " + "</b>" + wind_dir + " @ " + wind_mph + " MPH";
+      if (wind_mph == "0"){
+          gusts.innerHTML = "No wind"
+      }  
+      else{
+      gusts.innerHTML = "<b>" + "Wind: " + "</b>" + wind_dir + " @ " + wind_mph + " MPH";
+      }
       
 let rain = document.getElementById("precip");
         rain.innerHTML = "<b>" + "Precipitation: " + "</b>" + precip;
