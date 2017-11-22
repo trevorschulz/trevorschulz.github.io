@@ -49,7 +49,7 @@ let weather = document.getElementById("current_temp");
     
 let gusts = document.getElementById("wind");
       if (wind_mph == "0"){
-          gusts.innerHTML = "No wind"
+          gusts.innerHTML = "<b>" + "Wind: " + "</b>" + "No wind"
       }  
       else{
       gusts.innerHTML = "<b>" + "Wind: " + "</b>" + wind_dir + " @ " + wind_mph + " MPH";
