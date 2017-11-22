@@ -73,7 +73,7 @@ function background_function() {
         else if (observation == "Snow"){
             background.innerHTML = "<style> body{background-image:url('/images/plan-images/snowy.gif')}</style>";
         }
-       else if (observation == "Overcast" || observation == "Mostly Cloudy" || observation == "Scattered Clouds" || observation == "Partly Cloudy" observation == "Fog" observation == "Foggy"){
+       else if (observation == "Overcast" || observation == "Mostly Cloudy" || observation == "Scattered Clouds" || observation == "Partly Cloudy" || observation == "Fog" observation == "Foggy"){
             background.innerHTML = "<style> body{background-image:url('/images/plan-images/cloudy.gif')}</style>";
         }
       else {
