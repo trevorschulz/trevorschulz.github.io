@@ -2,9 +2,11 @@
 <html lang="en">
 
 <head>
- <link rel="stylesheet" href="/css/franklin_mobile.css" type="text/css"  media="screen">
+ <link rel="stylesheet" href="/css/current_weather.css" type="text/css"  media="screen">
+    <div id = "background">
+    </div>
  <meta charset="utf-8">
-    <title>Franklin Weather</title>
+    <title id = "title"></title>
     <meta name="description" content="A weather report for Frankon, Idaho">
     <meta name="viewport" content="width=device-width">
     
@@ -20,7 +22,7 @@
     <nav class="page-nav">
 <!--'Nav' help people navigate within the website-->
     <ul>
-        <li><a href="/index.html">Home</a></li>
+        <li><a href="https://trevorschulz.github.io">Home</a></li>
         <li><a href="https://trevorschulz.github.io/weather/franklin_weather.html">Franklin</a></li>
         <li><a href="https://trevorschulz.github.io/weather/greenville_weather.html">Greenville</a></li>
         <li><a href="https://trevorschulz.github.io/construction.html">Springfield</a></li>
@@ -28,58 +30,27 @@
     </ul>
 </nav>
 
-<h2 id="place">Franklin, ID</h2>
-
-<div class = "data">
-<div class="boxen" id="temp">
-     <h2>Current Temp</h2>
-        <p>51</p>
-        <p><b>Today's High and Low</b></p>
-        <p>71/45</p>
-</div>      
-
-<div class= "boxen" id = "cond">
-    <h2>Current Conditions</h2>
-        <p><b>Wind:</b> Southwest @ 1-5</p>
-        <p><b>Precipitation:</b> 70%</p>
-</div>
+<form method="get" action="//autocomplete.wunderground.com/aq" id="srchfrm">
+  <input type="search" name="query" id="query">
+  <input type="submit" name="submit" value="Search" id="send">
+</form>
     
-<div class="mobile boxen" id="hourly">
-    <h2>Hourly Information</h2>
-        <pre><b>
-12:00a - 67
-1:00a - 67
-2:00a - 69
-3:00a - 69
-4:00a - 69
-5:00a - 70
-6:00a - 69
-7:00a - 72
-8:00a - 74
-9:00a - 77
-10:00a - 79
-11:00a - 81
-12:00p - 84
-1:00p - 86
-2:00p - 88
-3:00p - 90
-4:00p - 90
-5:00p - 85
-6:00p - 83
-7:00p - 79
-8:00p - 74
-9:00p - 70
-10:00p - 68
-11:00p - 66
-        </b></pre>
-</div>
-</div>
+<section id="searchResults">
+  <h2>Search Results</h2>
+</section>
+
+
 
 
     </main>
+    <div id="foot">
     <footer>
   <br /> © 2017 Trevor Schulz
 </footer>
+        </div>
+    <script src="/jsonweather-html/scripts/jquery-3.0.0.min.js"></script>
+    <script src="/jsonweather-html/scripts/modules.js"></script>
+    <script src="/javascript/search.js"></script>
 </div>
 </body>
 
