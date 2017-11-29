@@ -17,7 +17,7 @@ $.getJSON("//autocomplete.wunderground.com/aq?query=" + value + "&cb=?", functio
     $.each(data.RESULTS, function(key, val) {
       if (val.name.search(rExp) != -1) {
         output += '<li>';
-                output += 'https://api.wunderground.com/api/473e5ba859e9731e/conditions' + val.l + ".json" + '" title="See results for ' + val.name + val.name;
+                output += '<a href="https://api.wunderground.com/api/473e5ba859e9731e/conditions' + val.l + ".json" + '" title="See results for ' + val.name + '">' + val.name + '</a>';
 
         output += '</li>';
           
