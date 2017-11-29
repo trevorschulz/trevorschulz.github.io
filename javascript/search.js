@@ -17,8 +17,7 @@ $.getJSON("//autocomplete.wunderground.com/aq?query=" + value + "&cb=?", functio
     $.each(data.RESULTS, function(key, val) {
       if (val.name.search(rExp) != -1) {
         output += '<li>';
-                output += '<a href="/weather/search_results.html" title="See results for ' + val.name + '">' + val.name + '</a>';
-          api += "https://api.wunderground.com/api/473e5ba859e9731e/conditions' + val.l + '.json'";
+                output += 'https://api.wunderground.com/api/473e5ba859e9731e/conditions' + val.l + ".json" + '" title="See results for ' + val.name + val.name;
 
         output += '</li>';
           
@@ -30,7 +29,7 @@ $.getJSON("//autocomplete.wunderground.com/aq?query=" + value + "&cb=?", functio
 
 function getData(api){
      $.ajax({
-            url : api,
+            url : output,
   dataType : "jsonp",
   success : function(data) {
   var cityName = data['location']['city'];
