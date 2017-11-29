@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+ <link rel="stylesheet" href="/css/current_weather.css" type="text/css"  media="screen">
+    <div id = "background">
+    </div>
+ <meta charset="utf-8">
+    <title id = "title"></title>
+    <meta name="description" content="A weather report for Frankon, Idaho">
+    <meta name="viewport" content="width=device-width">
+    
+</head>
+
+<body>
+    <div class="wrapper">
+<main>
+    <div class="headbox white">
+    <h1><img src="/images/plan-images/logo.png" alt="umbrella_logo" style="width:50px;height:50px;"> Weather Site</h1>
+    </div>
+    
+    <nav class="page-nav">
+<!--'Nav' help people navigate within the website-->
+    <ul>
+        <li><a href="https://trevorschulz.github.io">Home</a></li>
+        <li><a href="https://trevorschulz.github.io/weather/franklin_weather.html">Franklin</a></li>
+        <li><a href="https://trevorschulz.github.io/weather/greenville_weather.html">Greenville</a></li>
+        <li><a href="https://trevorschulz.github.io/construction.html">Springfield</a></li>
+        <li><a href="https://trevorschulz.github.io/construction.html">Search</a></li>
+    </ul>
+</nav>
+
+<h2 id="place"></h2>
+
+<div class = "data">
+<div class="boxen" id="temp">
+     <h2>Current Temp</h2>
+        <p id = "current_temp"> </p>
+        <p><b>Forecast</b></p>
+        <p id ="forecast"></p>
+</div>      
+
+<div class= "boxen" id = "cond">
+    <h2>Current Conditions</h2>
+        <p id = "wind"></p>
+        <p id = "precip"></p>
+</div>
+    
+<div class="mobile boxen" id="hourly">
+    <h2>Hourly Information</h2>
+        <pre><b>
+12:00a - 67
+1:00a - 67
+2:00a - 69
+3:00a - 69
+4:00a - 69
+5:00a - 70
+6:00a - 69
+7:00a - 72
+8:00a - 74
+9:00a - 77
+10:00a - 79
+11:00a - 81
+12:00p - 84
+1:00p - 86
+2:00p - 88
+3:00p - 90
+4:00p - 90
+5:00p - 85
+6:00p - 83
+7:00p - 79
+8:00p - 74
+9:00p - 70
+10:00p - 68
+11:00p - 66
+        </b></pre>
+</div>
+</div>
+
+
+    </main>
+    <div id="foot">
+    <footer>
+  <br /> © 2017 Trevor Schulz
+</footer>
+        </div>
+    <script src="/jsonweather-html/scripts/jquery-3.0.0.min.js"></script>
+    <script src="/jsonweather-html/scripts/modules.js"></script>
+    <script src="/javascript/search.js"></script>
+</div>
+</body>
+
+
+</html>
