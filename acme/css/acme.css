@@ -13,18 +13,12 @@ main {
     background: #ffff;
 }
 h1 {
-    font-size: 5em;
+    font-size: 3em;
     font-family:monospace;
-    color:#de2226;
-}
-}
-h1 {
-    font-size: 5em;
-    font-family:cursive;
 }
 nav{
     position: fixed;
-    top:140px;
+    top:150px;
     justify-content: space-around; 
     text-align:center;
     background-color: #de2226;
@@ -65,6 +59,20 @@ ul, li{
      font-size: 1em;
      width: 100%;
     padding-left: .2cm;
+}
+#main-title{
+    padding-top: 50px;
+}
+.home-content{
+        position: relative;
+        text-align: left;
+}
+#home-product-description{
+        font-size: 1.5em;
+        position: absolute;
+        top: 150px;
+        left:600px;
+    }
 }
 footer{
         display: flex;    
