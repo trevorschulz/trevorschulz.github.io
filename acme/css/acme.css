@@ -11,18 +11,20 @@ main {
     display: flex;
     flex-flow: column nowrap;
     background: #ffff;
+    
 }
+
 h1 {
     font-size: 3em;
     font-family:monospace;
 }
 nav{
-    position: fixed;
-    top:150px;
+    position:absolute;
     justify-content: space-around; 
     text-align:center;
     background-color: #de2226;
     width: 96%; 
+    margin-top: 150px;
 }
 
 nav.page-nav {
@@ -52,6 +54,11 @@ nav a:active {
 nav a:hover {
     color: #000000;
 }
+.home-content{
+        position: relative;
+        text-align: left;
+        margin-top: 100px;
+}
 ul, li{
      list-style-type: none;
      display: flex;
@@ -60,20 +67,20 @@ ul, li{
      width: 100%;
     padding-left: .2cm;
 }
-#main-title{
-    padding-top: 50px;
-}
-.home-content{
-        position: relative;
-        text-align: left;
-}
+
 #home-product-description{
-        font-size: 1.5em;
+        font-size: 2vw;
         position: absolute;
         top: 150px;
-        left:600px;
+        left:60%;
     }
+#i_want_it{
+    width: 100%
 }
+#product-picture{
+    width: 100%;
+}
+
 footer{
         display: flex;    
         position: inherit;
