@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <link rel="shortcut icon" href="http://www.iconarchive.com/download/i31598/sykonist/looney-tunes/Wile-E-Coyote-Smiling.ico">
 	<meta charset="utf-8">
 	<title>Acme Products</title>
 	<meta name="viewport" content="width=device-width">
@@ -10,13 +11,13 @@
 <body>
     <!--- Begin Wrapper --->
 	<div class="wrapper">
-		<nav class="page-nav">
+		<nav id="page-nav">
 			<ul>
-				<li><a href="index.html" title="Home">Home</a></li>
-				<li><a href="/acme/support/javareq.html" title="Anvils">Anvils</a></li>
-				<li><a href="/acme/support/javareq.html" title="Explosives">Explosives</a></li>
-                <li><a href="/acme/support/javareq.html" title="Decoys">Decoys</a></li>
-				<li><a href="/acme/support/javareq.html" title="Traps">Traps</a></li>
+				<li><a id="home" href="index.html" title="Home">Home</a></li>
+				<li><a id="anvils" href="/construction.html" title="Anvils">Anvils</a></li>
+				<li><a id="explosives" href="#" title="Explosives">Explosives</a></li>
+                <li><a id="decoys" href="#" title="Decoys">Decoys</a></li>
+				<li><a id="traps" href="#" title="Traps">Traps</a></li>
 
 			</ul>
 		</nav>
@@ -26,7 +27,7 @@
         <!--- Begin Home Content --->
         <div class="home-content">            
                 <h1 id="main-title">Welcome to Acme!</h1>
-                <img id="product-picture" src="images/site/feature.jpg" alt="Acme Rocket">
+                <img id="feature" src="images/site/feature.jpg" alt="Acme Rocket">
                 <div id="home-product-description"><h2>Acme Rocket</h2>
                     <p>Quick lightning fuse,<br> NHTSA approved seat belts,<br>Mobile Launch Stand Included!</p><br>
                     <img id ="i_want_it" src="images/site/iwantit.gif"></div>
@@ -38,10 +39,10 @@
         <div class="product-content">     
                 <h1 class="product-name"></h1>
                 <div id="product-picture"></div>
-                <div id="product-description"></div>
-                <div id="product-manufacturer"></div>
-                <div id="product-reviews"></div>
-                <div id="product-price"></div>
+                <p id="product-description"></p>
+                <p id="product-manufacturer"></p>
+                <p id="product-reviews"></p>
+                <p id="product-price"></p>
         </div>
         <!--- End Home Content --->
     
@@ -55,8 +56,8 @@
 		</main>
 	<!--- End Wrapper --->	
 	</div>
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  <script src="js/acme.js"></script>
+ <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="/acme/js/acme.js"></script>
 </body>
 
 </html>
