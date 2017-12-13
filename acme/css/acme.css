@@ -1,6 +1,30 @@
+* {
+    box-sizing: border-box;
+    /* changes width property
+    to total width instead of content width */
+}
+
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section,
+main,
+figcaption,
+figure {
+    display: block;
+    /* just in case we have
+    any older browsers that don't recognize
+    the HTML5 semantic elements */
+}
+
 body {
-    margin: 0; /* remove any margin from body */
-    padding: 20px; 
     background-image:url("/acme/images/site/background.jpg");
     background-attachment:fixed;
     background-repeat: no-repeat;
@@ -11,7 +35,11 @@ main {
     display: flex;
     flex-flow: column nowrap;
     background: #ffffff;
+    margin: 15px;
     
+}
+#main-title{
+    justify-content: center;
 }
 
 h1 {
@@ -19,12 +47,15 @@ h1 {
     font-family:monospace;
 }
 nav{
-    position:absolute;
+    position: fixed;
+    bottom:0;
+    left: 0;
+    right:0;
     justify-content: space-around; 
     text-align:center;
     background-color: #de2226;
-    width: 96%; 
-    margin-top: 150px;
+    width: 100%;    
+}
 }
 
 nav.page-nav {
@@ -57,7 +88,7 @@ nav a:hover {
 .home-content{
         position: relative;
         text-align: left;
-        margin-top: 100px;
+        margin-top: 0px;
 }
 ul, li{
      list-style-type: none;
@@ -66,6 +97,99 @@ ul, li{
      font-size: 1em;
      width: 100%;
     padding-left: .2cm;
+}
+
+#home-product-description{
+        font-size: 4vw;
+        position: absolute;
+        top: 93px;
+        left:60%;
+    }
+#i_want_it{
+    width: auto ;
+    max-width: 100% ;
+    height: auto ;
+}
+#feature{
+     width: auto ;
+    max-width: 100% ;
+    height: auto ;
+}
+.product-content{
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+}
+#product-name{
+    font-size: 200%;
+    color: #000000;
+    display: block;
+    margin: auto;
+    margin-bottom: 10%;
+}
+#product-picture{
+    max-width: 100%;
+    display: block;
+    margin: auto;
+
+}
+
+#product-text{
+    display: flex;
+    flex-flow: column;
+    font-size: 200%;
+    justify-content: center;
+    color: #990033;
+    padding-left: 10px;
+}
+hr{
+    width: 99%;
+}
+footer{
+        display: block;    
+        position: inherit;
+        bottom: 0;
+        width:100%;
+        padding-bottom: 20px;
+        margin-bottom: 0px;
+        align-content: center;
+}
+
+
+/********************************
+* Large Screen Styles
+* 1200px viewport / 18px font = 66.7em
+********************************/
+
+
+@media (min-width: 41.67em) {
+nav{
+    position:absolute;
+    justify-content: space-around; 
+    text-align:center;
+    background-color: #de2226;
+    width:98%; 
+    margin-bottom: 850px;
+    padding-left: none;
+    z-index:999;
+    height:70px;
+    font-size: 150%;
+    right: auto;
+    left:auto;
+    
+}
+#navbox{
+        margin-right: 30px;
+}
+    .wrapper {
+        max-width: none;
+        margin: 0 auto;
+    }
+
+.home-content{
+        position: relative;
+        text-align: left;
+        margin-top: 100px;
 }
 
 #home-product-description{
@@ -83,8 +207,18 @@ ul, li{
 .product-content{
     display: flex;
     flex-flow: row;
+    align-content: center;
 }
+#product-name{
+    font-size: 200%;
+    color: #000000;
+    margin-left: 45%;
+    margin-bottom: 10%;
+}
+#product-picture{
+    max-width: 100%;
 
+}
 
 #product-text{
     display: flex;
@@ -94,14 +228,3 @@ ul, li{
     color: #990033;
     padding-left: 10px;
 }
-hr{
-    width: 99%;
-}
-footer{
-        display: flex;    
-        position: inherit;
-        bottom: 0;
-        width:100%;
-        margin-bottom: 0px;
-        justify-content: center;
-    }
