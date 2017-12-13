@@ -212,7 +212,7 @@ nav{
         position: absolute;
         top: 100px;
         right: 50px;
-        max-height: 450;
+        max-height: 450px;
         
     }
 #i_want_it{
@@ -249,4 +249,5 @@ nav{
     justify-content: center;
     color: #990033;
     margin-left: 2%
+}
 }
