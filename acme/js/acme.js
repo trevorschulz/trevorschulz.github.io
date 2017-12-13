@@ -5,7 +5,7 @@ $.getJSON("/acme/js/acme.json" , function (JSON){
     $.each(JSON, function (key, val){
         if(val.prod_number == 1){
             $(".home-content").empty();
-            $(".product-name").text(val.name);
+            $("#product-name").text(val.name);
             $("#product-picture").html("<img id='product-picture' src='" + val.path +"' alt='Acme Rocket'>");
             $("#product-description").text(val.description);
             $("#product-manufacturer").text("Manufacturer: " + val.manufacturer);
@@ -28,7 +28,7 @@ $.getJSON("/acme/js/acme.json" , function (JSON){
     $.each(JSON, function (key, val){
         if(val.prod_number == 2){
           $(".home-content").empty();
-            $("#product-name").text("val.name");
+            $("#product-name").text(val.name);
             $("#product-picture").html("<img id='product-picture' src='" + val.path +"' alt='Acme Rocket'>");
             $("#product-description").text(val.description);
             $("#product-manufacturer").text("Manufacturer: " + val.manufacturer);
@@ -51,7 +51,7 @@ $.getJSON("/acme/js/acme.json" , function (JSON){
     $.each(JSON, function (key, val){
         if(val.prod_number == 3){
             $(".home-content").empty();
-            $("#product-name").text("val.name");
+            $("#product-name").text(val.name);
             $("#product-picture").html("<img id='product-picture' src='" + val.path +"' alt='Acme Rocket'>");
             $("#product-description").text(val.description);
             $("#product-manufacturer").text("Manufacturer: " + val.manufacturer);
@@ -74,7 +74,7 @@ $.getJSON("/acme/js/acme.json" , function (JSON){
     $.each(JSON, function (key, val){
         if(val.prod_number == 4){
             $(".home-content").empty();
-            $("#product-name").text("val.name");
+            $("#product-name").text(val.name);
             $("#product-picture").html("<img id='product-picture' src='" + val.path +"' alt='Acme Rocket'>");
             $("#product-description").text(val.description);
             $("#product-manufacturer").text("Manufacturer: " + val.manufacturer);

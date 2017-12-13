@@ -10,7 +10,7 @@ body {
 main {
     display: flex;
     flex-flow: column nowrap;
-    background: #ffff;
+    background: #ffffff;
     
 }
 
@@ -33,7 +33,7 @@ nav.page-nav {
 
 nav a:link {
     text-decoration: none;
-    color: #ffff
+    color: #ffffff;
     text-align: center;
 }
 
@@ -80,6 +80,20 @@ ul, li{
 #feature{
     width: 100%;
 }
+.product-content{
+    display: flex;
+    flex-flow: row;
+}
+
+
+#product-text{
+    display: flex;
+    flex-flow: column;
+    font-size: 200%;
+    justify-content: center;
+    color: #990033;
+    padding-left: 10px;
+}
 
 footer{
         display: flex;    
@@ -87,4 +101,5 @@ footer{
         bottom: 0;
         width:100%;
         margin-bottom: 0px;
+        justify-content: center;
     }
