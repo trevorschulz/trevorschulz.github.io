@@ -56,7 +56,6 @@ nav{
     background-color: #de2226;
     width: 100%;    
 }
-}
 
 nav.page-nav {
     text-decoration: none;
@@ -171,7 +170,7 @@ nav{
     width:98%; 
     bottom: auto;
     margin-top: 125px;
-    padding-left: none;
+    padding-left: 0;
     z-index:999;
     height:70px;
     font-size: 150%;
