@@ -211,9 +211,9 @@ nav{
     align-content: center;
 }
 #product-name{
-    font-size: 200%;
+    font-size: 300%;
     color: #000000;
-    margin-left: 45%;
+    margin-left: 20%;
     margin-bottom: 10%;
 }
 #product-picture{
@@ -227,5 +227,5 @@ nav{
     font-size: 200%;
     justify-content: center;
     color: #990033;
-    padding-left: 10px;
+    margin-left: 2%
 }
