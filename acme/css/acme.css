@@ -36,10 +36,13 @@ main {
     flex-flow: column nowrap;
     background: #ffffff;
     margin: 15px;
+    margin-bottom: 80px;
     
 }
 #main-title{
     justify-content: center;
+    text-align: center;
+    font-size: 30px;
 }
 
 h1 {
@@ -54,7 +57,8 @@ nav{
     justify-content: space-around; 
     text-align:center;
     background-color: #de2226;
-    width: 100%;    
+    width: 100%;   
+    z-index:999;
 }
 
 nav.page-nav {
@@ -99,20 +103,30 @@ ul, li{
 }
 
 #home-product-description{
+        width: 100%;
         font-size: 4vw;
         position: absolute;
-        top: 93px;
-        left:60%;
+        top: 55px;
+        text-align: right;
+        max-height: 150px;
     }
 #i_want_it{
     width: auto ;
     max-width: 100% ;
-    height: auto ;
+    height: 20px; ;
+    
 }
 #feature{
      width: auto ;
     max-width: 100% ;
-    height: auto ;
+    height: 150px ;
+    max-height: 300px;
+}
+.recipes{
+    display: flex;
+    justify-content: space-around; 
+    text-align:center;
+    vertical-align: middle;   
 }
 .product-content{
     display: flex;
@@ -193,16 +207,24 @@ nav{
 }
 
 #home-product-description{
-        font-size: 2vw;
+        padding-right: 5px;
+        font-size: 150%;
         position: absolute;
-        top: 150px;
-        left:60%;
+        top: 100px;
+        right: 50px;
+        max-height: 450;
+        
     }
 #i_want_it{
-    width: 100%
+    width: 100%;
+    width: auto;
+    height: auto;
 }
 #feature{
     width: 100%;
+    max-height: none;
+    height: auto;
+    max-height: 450px;
 }
 .product-content{
     display: flex;
