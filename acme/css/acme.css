@@ -94,7 +94,9 @@ ul, li{
     color: #990033;
     padding-left: 10px;
 }
-
+hr{
+    width: 99%;
+}
 footer{
         display: flex;    
         position: inherit;
