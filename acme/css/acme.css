@@ -169,7 +169,8 @@ nav{
     text-align:center;
     background-color: #de2226;
     width:98%; 
-    margin-bottom: 850px;
+    bottom: auto;
+    margin-top: 125px;
     padding-left: none;
     z-index:999;
     height:70px;
