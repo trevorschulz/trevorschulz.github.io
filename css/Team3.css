@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    /* changes width property
+    to total width instead of content width */
+}
+
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section,
+main,
+figcaption,
+figure {
+    display: block;
+    /* just in case we have
+    any older browsers that don't recognize
+    the HTML5 semantic elements */
+}
+header{
+    margin-bottom: 20px;
+}
+body {
+    background-image:url("map.jpg");
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;  
+    
+}
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    background: #ffffff;
+    margin: px;
+    margin-bottom: 80px;
+    
+}
+#main-title{
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+}
+
+h1 {
+    font-size: 3em;
+    font-family:monospace;
+}
+nav{
+    position: fixed;
+    bottom:0;
+    left: 0;
+    right:0;
+    justify-content: space-around; 
+    text-align:center;
+    background-color: #505050;
+    width: 100%;   
+    z-index:999;
+}
+
+nav.page-nav {
+    text-decoration: none;
+}
+
+nav a:link {
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+nav a:visited {
+    color: #0000ee;
+}
+
+nav a:active {
+    text-decoration: underline;
+    cursor: auto;
+}
+
+nav a:hover {
+    color: #000000;
+}
+.home-content{
+        position: relative;
+        text-align: left;
+        margin-top: 0px;
+}
+ul, li{
+     list-style-type: none;
+     padding: 2px;
+     font-size: 1em;
+     width: 100%;
+    padding-left: .2cm;
+}
+#navul{
+    display: flex;
+}
+
+hr{
+    width: 99%;
+}
+footer{
+        display: block;    
+        position: inherit;
+        bottom: 0;
+        width:100%;
+        padding-bottom: 20px;
+        margin-bottom: 0px;
+        align-content: center;
+}
+
+
+/********************************
+* Large Screen Styles
+* 1200px viewport / 18px font = 66.7em
+********************************/
+
+
+@media (min-width: 41.67em) {
+nav{
+    position:absolute;
+    justify-content: space-around; 
+    text-align:center;
+    background-color: #505050;
+    width:98%; 
+    bottom: auto;
+    margin-top: 125px;
+    padding-left: 0;
+    z-index:999;
+    height:70px;
+    font-size: 150%;
+    right: auto;
+    left:auto;
+    
+}
+#navbox{
+        margin-right: 30px;
+}
+    .wrapper {
+        max-width: none;
+        margin: 0 auto;
+    }
+
+.home-content{
+        position: relative;
+        text-align: left;
+        margin-top: 100px;
+}
+
+
+
+}
