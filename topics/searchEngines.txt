@@ -1,0 +1,18 @@
+[
+{
+"display": "Google",
+"url": "https://www.google.com"
+},
+{
+"display": "Yahoo",
+"url": "https://www.yahoo.com"
+},
+{
+"display": "Bing",
+"url": "https://www.bing.com"
+},
+{
+"display": "Duck Duck Go",
+"url": "https://duckduckgo.com/"
+}
+]

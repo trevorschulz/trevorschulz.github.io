@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="../assets/images/g3n13_logo_notxt.ico">
+	<meta charset="utf-8">
+	<title>trev-web</title>
+	<meta name="viewport" content="width=device-width">
+	<link href='../assets/css/main.css' rel='stylesheet' type='text/css'>
+	 
+</head>
+
+<body>
+    <!--- Begin Wrapper -->
+	<div class="wrapper">
+
+        
+
+		
+	<main class="main">
+                       
+		<nav id="page-nav">
+                    
+		<!--- Begin NavList -->
+                <ul id="navul">
+				<li>
+                    <a id="home" href="http://trev-web.com" title="Home">
+                        <img id="icon" src="../assets/images/g3n13_logo.png" alt="icon" width="80%">
+                    </a>
+                </li>
+                <li>
+                    <a class="swap-on-hover" id="home" href="http://trev-web.com" title="Home">
+                        <img class="nav_circle swap-on-hover__front-image" src="../assets/images/home_front.png" alt="home-front" width="50%" height="50%">
+                        <img class="nav_circle swap-on-hover__back-image" src="../assets/images/home.png" alt="home" width="50%" height="50%">
+                    </a>
+                </li>
+				<li>
+                    <a class="swap-on-hover" id="prove" href="../topics/index.html" title="Topics">
+                        <img class="nav_circle swap-on-hover__front-image" src="../assets/images/prove_front.png" alt="prove-front" width="50%" height="50%">
+                        <img class="nav_circle swap-on-hover__back-image" src="../assets/images/mobile_apps.png" alt="topics" width="50%" height="50%">
+                    </a>
+                </li>
+                <li>
+                    <a class="swap-on-hover" id="journals" href="../journals/template.html" title="Journal">
+                        <img class="nav_circle swap-on-hover__front-image" src="../assets/images/journal_front.png" alt="journal-front" width="50%" height="50%">
+                        <img class="nav_circle swap-on-hover__back-image" src="../assets/images/journal.png" alt="journals" width="50%" height="50%">
+                    </a>
+                </li>
+                <li>
+                    <a class="swap-on-hover" id="sandbox_home" href="../../../sandbox/webserver_landing/webserver_landing.html" title="sandbox_home">
+                        <img class="nav_circle swap-on-hover__front-image" src="../assets/images/sandbox_front.png" alt="sandbox-front" width="50%" height="50%">
+                        <img class="nav_circle swap-on-hover__back-image" id="sandbox" src="../assets/images/sandbox.png" alt="sandbox" width="50%" height="50%">
+                    </a>
+                </li>
+                </ul>
+        </nav>
+
+        <!--- End NavList -->
+        
+        <!--- Begin Home Content -->
+        <div class="home-content">            
+			<img id="logo" src="../assets/images/g3n13_logo.png" alt="logo">
+            <br>
+            <hr>
+        </div>
+
+        <!-- Begin Object Code -->
+        <div class="code-content"  style="justify-content: space-around; color:white; font-size: 1.5em; ">
+            <div id="block1">
+                <h2>Object Creation #1</h2>
+                <pre>
+                    //javascript
+                    //Option #1 to create an object
+
+                    let person = new Object();
+                    
+                    person.name = "Trevor";
+                    person.major = "CIT";
+                    person.gender = "m";
+                    person.age = "22";
+                    person.updateAge = function(){
+                        return ++person.age;
+                    }
+                    console.log(person.age);
+                </pre> 
+                <p>Here we will output person.name, person.major, & person.age: </p>
+                <p id="person"></p>
+            </div> 
+            <div id="block2">
+                <h2>Object Creation #2</h2>
+                <pre>
+                    //javascript
+                    //Option #2 to create an object
+
+                    let person2 = {
+                        name: "Travis",
+                        major: "Rec Management",,
+                        gender: "m",
+                        age: 22,
+                        upadteAge: function(){
+                            return ++person2.age;
+                        }
+                    }
+                </pre>
+                <p>Here we will output person.name, person.major, & person.age: </p>
+                <p id="person2"></p>
+            </div>
+        </div>
+        <div class=home-content id="home-box">
+            
+        </div>
+        <!-- End Object Code -->
+        
+        <!--- End Home Content -->
+    
+           
+    <footer class="page-footer">
+    </footer>
+	
+	</main>
+	<!--- End Wrapper -->
+	</div>
+    
+</body>
+<script src="../assets/javascript/objects.js"></script>
+
+</html>
